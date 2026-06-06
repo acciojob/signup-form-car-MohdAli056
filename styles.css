@@ -1,2 +1,24 @@
 
 /* Your CSS Code here. */
+.signup-form {
+      width: 250px;
+      background-color: antiquewhite;
+      padding: 12px;
+      border: 1px solid #000;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    .gender label {
+      display: inline;
+      margin-right: 10px;
+    }
+    .tos {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .tos input[type="checkbox"] {
+      margin-right: 6px; /* space between checkbox and text */
+    }

@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <form class="signup-form" action="submit" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Name">
 
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email">
+
+      <div class="gender">
+        <label>Gender:</label>
+        <input type="radio" id="gender_m" name="gender" required>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_f" name="gender" required>
+        <label for="gender_f">Female</label>
+      </div>
+
+      <label for="cars">Car Brands:</label>
+      <select id="cars" name="cars" required>
+        <option value="">--Please choose an option--</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="tesla">Tesla</option>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required placeholder="Age">
+
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="tel">Phone Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="Password">
+
+      <!-- TOS -->
+      <div class="tos">
+        <input type="checkbox" id="tos" name="tos" required>
+        <label for="tos">I agree to the TOS</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
-
 </html>
